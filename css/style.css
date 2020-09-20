@@ -1,0 +1,124 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header_wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo p {
+  font-size: 25px;
+  font-weight: bold;
+  color: #111;
+  text-transform: lowercase;
+}
+.logo p span {
+  color: orange;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav ul li {
+  margin-right: 20px;
+}
+.nav ul li:last-child {
+  margin: 0;
+}
+.nav ul li a {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #222;
+  display: block;
+}
+.nav ul li a:hover {
+  text-decoration: underline;
+  color: #000;
+  -webkit-transform: scale(1.1, 1.1);
+      -ms-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.subs a {
+  color: #fff;
+  padding: 10px 30px;
+  background-color: #000;
+  display: block;
+}
+.subs a:hover {
+  -webkit-transform: scale(1.1, 1.1);
+      -ms-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.burger {
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 30px;
+}
+.burger:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 7px;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+}
+.burger:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 7px;
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+}
+.burger span {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 7px;
+  background-color: #000;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 5px;
+}
